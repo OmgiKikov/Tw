@@ -1,0 +1,20 @@
+body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form {
+  background: #15212b; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.login-or-signup small {
+    color: #93b7d8; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.tos-agreement div.block-header span {
+    color: #93b7d8; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.tos-agreement div.block-body a {
+    color: #fff; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.tos-agreement div.block-footer:before {
+    background: #586d7b; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.tos-agreement div.block-footer span {
+    color: #93b7d8; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.form-group input {
+    border-radius: 2px; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.welcome-back h5 {
+    color: #fff; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.right-part div.login-form div.welcome-back p {
+    color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

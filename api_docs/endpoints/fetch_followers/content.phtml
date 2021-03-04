@@ -1,0 +1,112 @@
+<h2 id="get-characters">Fetch followers of an account</h2>
+<p>
+    Please use this <strong>(https://YOUR-SITE.COM/mobile_api/fetch_followers) API for accessing endpoint of user (followers) list</strong> 
+</p>
+<br>
+<h4 class="table-title">Get parameters</h4>
+<table>
+    <thead>
+    <tr>
+        <th width="15%">Field</th>
+        <th width="25%">Value</th>
+        <th width="45%">Remarks</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>offset</td>
+            <td>Last user offset ID</td>
+            <td>
+                This is only needed when loading users of the pagination system.
+            </td>
+        </tr>
+        <tr>
+            <td>session_id</td>
+            <td>​Access token ID (Optional)</td>
+            <td>
+                E.g. de25cc16eb00960f076...
+            </td>
+        </tr>
+        <tr>
+            <td>page_size</td>
+            <td>​Total users limit for each request</td>
+            <td>
+                Recommended: 20
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h4 class="table-title">Success response</h4>
+<div class="code-holder">
+    <div class="code-holder-inner">
+<pre><code class="json">{
+    "code": 200,
+    "valid": true,
+    "message": "Followers fetched successfully",
+    "data": [
+        {
+            "offset_id": 56,
+            "id": 64,
+            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+            "followers": 4493,
+            "posts": 6750,
+            "avatar": "http://colibri.loc/upload/default/avatar.png",
+            "last_active": "13 May, 20 11:05 AM",
+            "username": "@tim_dugelman",
+            "fname": "Tim",
+            "lname": "Dugelman",
+            "email": "tim_dugelman@gmail.com",
+            "verified": "1",
+            "name": "Tim Dugelman",
+            "url": "http://colibri.loc/@tim_dugelman",
+            "is_following": true,
+            "is_user": false
+        },
+        {
+            "offset_id": 55,
+            "id": 34,
+            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+            "followers": 4510,
+            "posts": 5269,
+            "avatar": "http://colibri.loc/upload/default/avatar.png",
+            "last_active": "09 Sep, 20 08:09 PM",
+            "username": "@jack_nelson",
+            "fname": "Jack",
+            "lname": "Nelson",
+            "email": "jack_nelson@gmail.com",
+            "verified": "0",
+            "name": "Jack Nelson",
+            "url": "http://colibri.loc/@jack_nelson",
+            "is_following": true,
+            "is_user": false
+        }
+    ]
+}
+</code></pre>
+    </div>
+</div>
+<h4 class="table-title">Error responses</h4>
+<div class="code-holder">
+    <div class="code-holder-inner">
+<pre><code class="json">{
+    "message": "No data found",
+    "code": 204,
+    "data": []
+}
+
+{
+    "err_code": "invalid_request_data",
+    "code": 404,
+    "message": "User with this ID does not exist",
+    "data": []
+}
+
+{
+    "code": 400,
+    "err_code": "invalid_request_data",
+    "message": "This profile data is not available for viewing",
+    "data": []
+}
+</code></pre>
+    </div>
+</div>
